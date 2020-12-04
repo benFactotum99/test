@@ -1,16 +1,16 @@
 package auto;
 
-import java.util.Vector;
+import motori.Motore;
+import optional.Optional;
 
-import java.util.Motore;
-import java.util.Optional;
+import java.util.Vector;
 
 public class Automobile extends Veicolo implements Veicoli {
 
 	private String strOptional = "non ci sono optional.";
 	private int numOptional = 0;
 	
-	private Vector <Optional> optional = new Vector <Optional>();
+	private Vector<Optional> optional = new Vector<optional.Optional>();
 
 	private Motore motore;
 
@@ -28,8 +28,9 @@ public class Automobile extends Veicolo implements Veicoli {
 	public void setNumOptional(int numOptional) {
 		this.numOptional = numOptional;
 	}
-	
-	public void setOptional(Optional optional) { this.optional.add(optional); }
+
+	@Override
+	public void setOptional(optional.Optional optional) { this.optional.add(optional); }
 
 	@Override
 	public String toString() {

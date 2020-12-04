@@ -1,6 +1,6 @@
 package motori;
 
-public abstract class Motore {
+public class Motore {
 
     private String modello;
     private String marca;
@@ -29,8 +29,7 @@ public abstract class Motore {
         return cilindri;
     }
 
-    public abstract double getPotenza();
-
+    public double getPotenza(){return 0;}
     public String toString(){
         return "\nmodello del motore: " + this.getModello() +
                "\nmarca del motore: " + this.getMarca() +
